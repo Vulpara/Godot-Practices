@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dbjjoehqkxohi"]
+
+[ext_resource type="Texture2D" uid="uid://ded8huv3lr1a7" path="res://assets/graphics/cars/yellow.png" id="1_o7jgv"]
+[ext_resource type="Script" uid="uid://cbvw8nabcfsuy" path="res://scripts/objects/yellow_car.gd" id="1_omtpy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_omtpy"]
+size = Vector2(24, 15)
+
+[node name="YellowCar" type="Area2D" unique_id=2003973202]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_omtpy")
+
+[node name="Graph" type="Sprite2D" parent="." unique_id=148363479]
+texture = ExtResource("1_o7jgv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1989682098]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_omtpy")

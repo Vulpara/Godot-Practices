@@ -1,0 +1,11 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Godot-specific ignores
+.godot/
+.import/
+export_preset.cfg
+# 导出后的二进制文件
+build/
+dist/

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://divhnfu8o4w0u"]
+
+[ext_resource type="Script" uid="uid://m408b0xfisif" path="res://scripts/objects/orange_tree.gd" id="1_46qtm"]
+[ext_resource type="Texture2D" uid="uid://y3ndpd5bhsi3" path="res://assets/graphics/objects/tree2.png" id="1_652yv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_46qtm"]
+size = Vector2(8, 22)
+
+[node name="OrangeTree" type="StaticBody2D" unique_id=1937075821]
+scale = Vector2(2, 2)
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_46qtm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=331847667]
+texture = ExtResource("1_652yv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1400010890]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_46qtm")
